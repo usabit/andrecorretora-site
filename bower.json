@@ -1,0 +1,22 @@
+{
+  "name": "usabit.github.io",
+  "description": "Site da Usabit",
+  "main": "gulpfile.js",
+  "authors": [
+    "usabit <contato@usabit.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/usabit/usabit.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "^4.7.0"
+  }
+}

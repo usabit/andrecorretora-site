@@ -1,0 +1,59 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: André Corretora
+email: contato@andrecorretora.com.br
+phone: (21) 3176-1177
+description: Seguros completos e acessíveis para sua segurança
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://andrecorretora.com.br" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  andrecorretora
+
+# Footer Information
+google_map: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d759.2838215234633!2d-43.27029330841114!3d-22.87935686808418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf31c91cd0302bb07!2sShopping+Nova+Am%C3%A9rica!5e0!3m2!1spt-BR!2sbr!4v1478018926639
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+  'node_modules', 
+  'gulpfile.js',
+  'package.json',
+  '_sass',
+  '.sass-cache',
+  'bower.json',
+  'bower_components'
+]
+
+social-links: [
+  {
+    fontawesome_icon: 'fa-facebook',
+    link: 'http://fb.com/usabitdigital',
+    description: '/usabitdigital'
+  },
+  {
+    fontawesome_icon: 'fa-instagram',
+    link: 'https://www.instagram.com/usabit_/',
+    description: '@usabit_'
+  },
+  {
+    fontawesome_icon: 'fa-linkedin',
+    link: 'https://www.linkedin.com/company/usabit',
+    description: '/company/usabit'
+  }
+]
+
+
+
+
+
+
+
+
+
