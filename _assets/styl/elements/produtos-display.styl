@@ -1,0 +1,34 @@
+.produtos-display-container {
+    background-color orange
+    background-image url(/assets/img/textura_geometrica.png);
+    background-size cover
+    background-position center center
+}
+
+.produto-display {
+    border 2px solid white
+    text-align center
+    display flex
+    align-items center
+    flex-direction column
+    
+    .text-wrap {
+        color white
+        p {
+            font-size 1.3333rem
+        }
+    }
+    
+    .image-wrap {
+        border red
+        align-self stretch
+        position relative
+        display flex
+        background-size cover
+        background-position center center
+        &:after {
+            padding-bottom 33%
+            content ''
+        }        
+    }
+}

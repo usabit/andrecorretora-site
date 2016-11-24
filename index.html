@@ -3,21 +3,80 @@ layout: default
 ---
 
 <div class="home">
+  <div class="wrapper">Oi, wrapper</div>
 
-  <h1 class="page-heading">Posts</h1>
+    <section class="faixa-cinza">
+        <i class="fa fa-info-circle"></i>
+        <p class="m-0">
+            Saiba <span>mais</span> sobre <b><i>quem somos</i></b> e <b><i>o que fazemos</i></b> <a href="#" class="underline">aqui</a>.
+        </p>
+    </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <section class="ptb-50 wrapper simple-box-container">
+        <div class="simple-box">
+            <div class="image-wrap">
+                <img src="http://placehold.it/200x200" alt="">
+            </div>
+            <div class="text-wrap">
+                <h3>Como escolher o seguro ideal para sua empresa?</h3>
+                <p>Seu guia passo a passo para descobrir qual o melhor seguro para atender suas necessidades.</p>
+                <a class="borded" href="#">começar</a>
+            </div>
+        </div>
+        <div class="simple-box">
+            <div class="image-wrap">
+                <img src="http://placehold.it/200x200" alt="">
+            </div>
+            <div class="text-wrap">
+                <h3>Como contratar um seguro empresarial?</h3>
+                <p>Todas as etapas e truques necessários para você contratar um seguro para sua empresa.</p>
+                <a class="borded" href="#">começar</a>
+            </div>
+        </div>
+        <div class="simple-box">
+            <div class="image-wrap">
+                <img src="http://placehold.it/200x200" alt="">
+            </div>
+            <div class="text-wrap">
+                <h3>Por que a Andre Corretora?</h3>
+                <p>Além das vantagens para seus funcionários, nosso app e equipe oferecem todo o apoio para o RH da sua empresa.</p>
+                <a class="borded" href="#">saiba mais</a>
+            </div>
+        </div>
+        <div class="simple-box">
+            <div class="image-wrap">
+                <img src="http://placehold.it/200x200" alt="">
+            </div>
+            <div class="text-wrap">
+                <h3>Ainda tem dúvidas? Vem cá.</h3>
+                <p>Veja nossas perguntas frequentes e caso ainda tenha alguma dúvida nos envie.</p>
+                <a class="borded" href="#">faq</a>
+            </div>
+        </div>
+    </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <section class="produtos-display-container ptb-50">
+        <div class="wrapper">
+            <div class="produto-display">
+                <div class="image-wrap" style="background-image: url('http://placehold.it/550x190')"></div>
+                <div class="text-wrap m-20">
+                    <h3 class="mb-20">Previdência Privada</h3>
+                    <p>A previdência complementar aberta é uma excelente opção para quem deseja formar uma poupança e, desse modo, garantir um futuro mais tranquilo. Confira os planos e coberturas que a Andre Corretora oferece.</p>
+                    <a href="#" class="borded inverted">Saiba mais</a>
+                </div>
+            </div>
+            <div class="produto-display">
+                <div class="image-wrap" style="background-image: url('http://placehold.it/550x190')"></div>
+                <div class="text-wrap m-20">
+                    <h3 class="mb-20">Previdência Privada</h3>
+                    <p>A previdência complementar aberta é uma excelente opção para quem deseja formar uma poupança e, desse modo, garantir um futuro mais tranquilo. Confira os planos e coberturas que a Andre Corretora oferece.</p>
+                    <a href="#" class="borded inverted">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <section class='mtb-50'>
+        <button>Solicitar orçamento</button>
+    </section>
 </div>

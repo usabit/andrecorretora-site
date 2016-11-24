@@ -1,0 +1,40 @@
+a 
+    text-decoration none
+    color blue
+
+    &:hover 
+        opacity .7
+        
+    &.underline
+        position relative
+        &:after
+            display block
+            position absolute
+            content ''
+            left 0
+            right 0
+            bottom -1px
+            height 1px
+            background-color blue
+            
+    &.borded
+        color orange
+        border 2px solid orange
+        padding 7px 10px
+        border-radius 50px
+        display inline-block
+        text-transform uppercase
+        
+        &:hover
+            transition 200ms
+            color white
+            background-color orange
+            opacity 1
+            
+        &.inverted
+            color white
+            border-color white
+            &:hover
+                color orange
+                background-color white
+            

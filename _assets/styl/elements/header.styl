@@ -1,0 +1,72 @@
+headerBreakpoint = 800px;
+
+header.site-header {
+    background alpha(white, .98)
+    box-shadow 0 1px 2px alpha(black, .2)
+    position fixed
+    top 0
+    left 0
+    right 0
+    z-index 9
+    display flex
+    align-items center
+    
+    .wrapper {
+        padding 20px
+        display flex
+        height 100px
+        max-height 100px
+    }
+
+    .site-nav {
+        display flex
+        align-items center
+
+        .responsive-menu {
+            +above(headerBreakpoint){
+                display none
+            }
+            z-index -1
+            position fixed
+            padding-top 100px
+            trbl 0
+            background alpha(blue, .9)
+            display flex
+            flex-direction column
+            justify-content space-around
+            
+            a.page-link {
+                color white
+                display flex
+                align-items center
+                justify-content center
+                font-size 5vh
+                padding 2vh
+                
+                &:hover {
+                  background-color white
+                  color blue
+                  transition 100ms
+                  opacity 1
+                }
+            }
+        }
+
+        .trigger {
+            +below(headerBreakpoint){
+                display none
+            }
+            display flex
+            align-items center
+            
+            a.page-link {
+                margin-left 15px
+                &:first-child { margin-left: 0; }
+                font-size 1.3333333333rem
+                text-transform uppercase
+                color blue
+                text-decoration none
+            }
+        }        
+    }
+}

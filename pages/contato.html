@@ -1,0 +1,42 @@
+---
+layout: page
+title: Contato
+permalink: /contato/
+order: 5
+group: "navigation"
+banner_class: contato
+banner_text: Vamos continuar esse assunto?
+banner_img: /assets/img/contato-banner-01.jpg
+---
+
+<section class="wrapper contato">
+    <div class="contact-method">
+        <h1 class="mb-50">Pode falar agora.</h1>
+        <div 
+        class="fb-page" 
+        data-href="https://www.facebook.com/usabitdigital/" 
+        data-tabs="messages, timeline" 
+        data-small-header="false" 
+        data-adapt-container-width="true" 
+        data-hide-cover="false" 
+        data-show-facepile="true"
+        >
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/usabitdigital/"><a href="https://www.facebook.com/usabitdigital/">Usabit</a></blockquote>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact-method">
+        <h1 class="mb-50">Vamos ser amigos?</h1>
+
+        <ul class="social-media-list">
+            {% for social_link in site.social-links %}
+            <li>
+                {% include icon-social-contato.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon description=social_link.description %}
+            </li>
+            {% endfor %}
+        </ul>        
+
+    </div>
+</section>

@@ -1,38 +1,35 @@
 <footer class="site-footer">
+    <div class="wrapper">
 
-  <div class="wrapper">
+        <ul class="info-contato">
+            <li>
+                <i class="fa fa-phone"></i>
+                <span>(21)####-####</span>
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:#">#####@######.com</a>
+            </li>
+            <li>
+                <i class="fa fa-home"></i>
+                <span>
+                    Av Marechal Camara, 160.<br>
+                    Centro, Rio de Janeiro
+                </span>
+            </li>
+        </ul>        
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+        <span class="flex-spacer"></span>
+        <div class="fb-page" 
+          data-href="https://www.facebook.com/usabitdigital"
+          data-width="380" 
+          data-height="70"
+          data-hide-cover="false"
+          data-show-facepile="false" 
+          data-show-posts="false"></div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
     </div>
-
-  </div>
-
 </footer>
+
+<script src="/assets/libs/jquery/dist/jquery.js"></script>
+<script src="/assets/js/main.js"></script>
