@@ -1,0 +1,44 @@
+positionArrow = -38px;
+positionArrow = 0;
+paddingArrow = 4.5px;
+.centered-nav {
+    .owl-prev,
+    .owl-next {
+        position absolute
+        z-index 99
+        top 50%
+        transform translateY(-50%)
+        left positionArrow
+        border 2px solid red
+        border-radius 50%
+        size 50px
+        display flex
+        align-items center
+        justify-content center
+        padding-right paddingArrow
+        font-size 3rem
+    }
+    
+    .owl-next {
+        left initial
+        right positionArrow
+        padding-right 0
+        padding-left paddingArrow
+    }
+    
+    &.white {
+        .owl-prev,
+        .owl-next {
+            color white
+            border-color white
+        }
+    }
+    &.orange {
+        .owl-prev,
+        .owl-next {
+            color orange
+            border-color orange
+        }
+    }
+}
+

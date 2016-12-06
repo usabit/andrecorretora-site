@@ -87,7 +87,8 @@ gulp.task('bower', ['bower-install'], function() {
                 'owl.carousel': {
                     'main': [
                         "dist/owl.carousel.js",
-                        "dist/assets/owl.carousel.css"
+                        "dist/assets/owl.carousel.css",
+                        "dist/assets/owl.theme.default.min.css"
                     ]
                 }
             }
