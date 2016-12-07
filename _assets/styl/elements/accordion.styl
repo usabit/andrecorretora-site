@@ -1,0 +1,68 @@
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    background alpha(black, .25)
+    border 0
+}
+
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active, 
+a.ui-button:active, 
+.ui-button:active, 
+.ui-button.ui-state-active:hover {
+    background alpha(black, .25)
+    border 0
+}
+
+.ui-accordion .ui-accordion-header {
+    font-size 20px
+    font-family Roboto
+    font-weight 300
+    position relative
+    padding-right 30px
+    display flex
+    align-items center
+    justify-content flex-start
+    margin-top 15px
+    color white
+    
+    &:first-child {
+        margin-top 0
+    }
+    
+    &:before,
+    &:after {
+        font-family FontAwesome
+        content '\f059'
+    }
+    
+    &:before {
+        font-size 22px
+        margin-right 5px
+    }
+    
+    &:after {
+        position absolute
+        content '\f067'
+        right 10px
+    }
+    &.ui-accordion-header-active:after {
+        content '\f068'
+    }
+}
+
+.ui-widget-content {
+    background alpha(black, .25)
+    border 0
+}
+
+.ui-corner-flat > * {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}

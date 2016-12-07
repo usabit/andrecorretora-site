@@ -38,7 +38,7 @@ social-links: [
     description: '/usabitdigital'
   },
   {
-    fontawesome_icon: 'fa-instagram',
+    fontawesome_icon: 'fa-twitter',
     link: 'https://www.instagram.com/usabit_/',
     description: '@usabit_'
   },

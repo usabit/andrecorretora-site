@@ -1,0 +1,48 @@
+.geometric-background {
+    background-color orange
+    background-image url(/assets/img/textura_geometrica.png);
+    background-size cover
+    background-position center center
+    
+    .geometric-background-header-container {
+        text-align center
+    }
+    
+    h1 {
+        color white
+        font-size 3.5rem
+    }
+    
+    .dark-box {
+        background-color alpha(black, .25)
+        padding 10px
+        color white
+        
+        .text-wrap {
+            display flex
+            flex-direction column
+            
+            label {
+                display flex
+                flex-direction column
+
+                span {
+                    margin-bottom 10px
+                    display inline-block
+                }
+                
+                input {
+                    padding 5px 7px
+                    font-size 1.2rem
+                }
+                
+                textarea {
+                    padding 5px 7px
+                    font-size 1.2rem
+                    resize none
+                    height 100%
+                }
+            }
+        }
+    }
+}

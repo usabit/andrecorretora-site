@@ -57,6 +57,23 @@ h3 {
   }
 }
 
+.underlined-header {
+    margin 0 auto
+    font-size 2rem
+    font-weight 500
+    text-transform uppercase
+    border-bottom 1px solid black
+    color orange
+    border-bottom-color @color
+    display inline-block
+
+    &.white {
+      color white
+      border-bottom-color @color
+    }
+}
+
+
 // *********************** //
 .light {
   font-weight 300

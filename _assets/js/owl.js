@@ -1,6 +1,17 @@
-$(function() {
+$(document).ready(function() {
 
-    $('.owl-carousel').owlCarousel({
+    $('.banner-fullwidth').owlCarousel({
+        items: 1,
+        nav: false,
+        loop: true,
+        autoplay: true,
+        autoplaySpeed: 1200,
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        slideSpeed: 1300
+    });
+
+    $('.slider').owlCarousel({
         items: 2,
         loop: true,
         nav: true,

@@ -86,14 +86,30 @@ gulp.task('bower', ['bower-install'], function() {
                 },
                 'owl.carousel': {
                     'main': [
-                        "dist/owl.carousel.js",
-                        "dist/assets/owl.carousel.css",
+                        "dist/owl.carousel.min.js",
+                        "dist/assets/owl.carousel.min.css",
                         "dist/assets/owl.theme.default.min.css"
+                    ]
+                },
+                'jquery-ui': {
+                    'main': [
+                        'jquery-ui.js',
+                        'themes/ui-darkness/jquery-ui.min.css',
+                        'themes/ui-darkness/theme.css',
+                        'themes/ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png',
+                        'themes/ui-darkness/images/ui-bg_glass_20_555555_1x400.png',
+                        'themes/ui-darkness/images/ui-bg_inset-soft_30_f58400_1x100.png',
+                        'themes/ui-darkness/images/ui-icons_cccccc_256x240.png',
+                        'themes/ui-darkness/images/ui-icons_222222_256x240.png',
+                        'themes/ui-darkness/images/ui-bg_glass_40_0078a3_1x400.png',
+                        'themes/ui-darkness/images/ui-icons_ffffff_256x240.png'
                     ]
                 }
             }
         }))
         .pipe(gulp.dest('assets/libs'));
+
+
 });
 
 gulp.task('wiredep', function() {

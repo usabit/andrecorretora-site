@@ -1,0 +1,57 @@
+.banner-fullwidth {
+    position relative
+    
+    .owl-dots {
+        position absolute
+        bottom 10px
+        left 50%
+        transform translateX(-50%)
+        
+        .owl-dot {
+            span {
+                border-radius 0
+                background-color alpha(white, .4)
+                size 15px
+                box-shadow 1px 1px 2px alpha(black, .4)
+                border white
+            }
+            &:hover span {
+                background-color #173c46
+            }
+            &.active span {
+                background-color white
+            }
+        }
+    }
+
+    .banner {
+        height 550px
+        background-size cover
+        background-position bottom center
+        padding-bottom 30px
+        
+        +below(1050px){
+            height 350px
+        }
+        
+        .wrapper {
+            height 100%
+            display flex
+            align-items center
+            justify-content space-between
+            
+            .text-wrap {
+                width 400px
+                align-self flex-start
+
+                
+                .banner-text {
+                    font-weight 400
+                    color #173c46
+                }
+            }
+        }
+        
+    }
+
+}

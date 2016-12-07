@@ -4,39 +4,63 @@ title: Contato
 permalink: /contato/
 order: 5
 group: "navigation"
-banner_class: contato
-banner_text: Vamos continuar esse assunto?
-banner_img: /assets/img/contato-banner-01.jpg
 ---
 
-<section class="wrapper contato">
-    <div class="contact-method">
-        <h1 class="mb-50">Pode falar agora.</h1>
-        <div 
-        class="fb-page" 
-        data-href="https://www.facebook.com/usabitdigital/" 
-        data-tabs="messages, timeline" 
-        data-small-header="false" 
-        data-adapt-container-width="true" 
-        data-hide-cover="false" 
-        data-show-facepile="true"
-        >
-            <div class="fb-xfbml-parse-ignore">
-                <blockquote cite="https://www.facebook.com/usabitdigital/"><a href="https://www.facebook.com/usabitdigital/">Usabit</a></blockquote>
+<section class="geometric-background ptb-50">
+    <div class="geometric-background-header-container mb-40">
+        <h2 class="underlined-header white">Contato</h2>
+        <h1 class="mt-40">Fale Conosco</h1>
+    </div>
+
+    <div class="wrapper dark-box">
+        
+        <div class="row">
+            <div class="text-wrap flex m-15">
+                <h2>Entre em contato conosco <br> e peça um orçamento.</h2>
+                <ul class="lista-contatos mtb-20">
+                    <li><i class="fa fa-phone"></i> (21) xxxx-xxxx</li>
+                    <li><i class="fa fa-envelope"></i> xxxx@xxxx.xxx.xx</li>
+                </ul>
+                <ul class="social-media-list">
+                    {% for social_link in site.social-links %}
+                    <li>
+                        {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon description=social_link.description %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="map-wrap flex m-15">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1023309580273!2d-43.171276284435265!3d-22.90959614373229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981ddefdac545%3A0x7b1e869cc2963cfd!2sAv.+Mal.+C%C3%A2mara%2C+160+-+Centro%2C+Rio+de+Janeiro+-+RJ%2C+20020-080!5e0!3m2!1spt-BR!2sbr!4v1481120906846" height="350" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p>Av Marechal Camara, 160. Centro, Rio de Janeiro</p>
+            </div>
+        </div>
+
+        <h2 class="m-15">Ou deixe seu contato.</h2>
+        <div class="row">
+            <div class="text-wrap flex m-15">
+                <label class="mb-15">
+                    <p class="m-0 mb-5">Nome:</p>
+                    <input type="text" name="nome" value="">
+                </label>
+                <label class="mb-15">
+                    <p class="m-0 mb-5">Nome:</p>
+                    <input type="text" name="nome" value="">
+                </label>
+            </div>
+            <div class="text-wrap flex m-15">
+                <label class="flex mb-15">
+                    <p class="m-0 mb-5">Mensagem:</p>
+                    <textarea type="text" name="nome" value=""></textarea>
+                </label>
             </div>
         </div>
 
     </div>
-    <div class="contact-method">
-        <h1 class="mb-50">Vamos ser amigos?</h1>
+</section>
 
-        <ul class="social-media-list">
-            {% for social_link in site.social-links %}
-            <li>
-                {% include icon-social-contato.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon description=social_link.description %}
-            </li>
-            {% endfor %}
-        </ul>        
-
-    </div>
+<section class="faixa-cinza">
+    <i class="fa fa-info-circle"></i>
+    <p class="m-0">
+        Verifique se suas dúvidas estão nas nossas <a href="/faq" class="underline">Perguntas Frequentes</a>.
+    </p>
 </section>
