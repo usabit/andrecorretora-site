@@ -45,4 +45,52 @@
             }
         }
     }
+    
+    .noticia-destaque {
+        display flex
+        align-items flex-start
+        
+        +below(800px){
+            flex-direction column
+        }
+        
+        .image-wrap {
+            flex 1
+            margin-right 15px
+            background-color alpha(white, .4)
+            position relative
+            background-position center center
+            background-repeat no-repeat
+            background-size cover
+            &:after {
+                content ''
+                padding-bottom 66.445%
+                display block
+            }
+            .noticia-share-box {
+                box-shadow none
+                bottom 0
+                right 0
+            }
+            
+            +below(800px){
+                margin-right 0
+                margin-bottom 15px
+                width 100%
+            }
+        }
+        .text-wrap {
+            flex 1
+            .title {
+                color white
+                font-weight 400
+                padding-bottom 7px
+                border-bottom 1px solid white
+            }
+            .brief {
+                font-size 1.2rem
+                line-height 1.5
+            }
+        }
+    }
 }
